@@ -1,4 +1,3 @@
-//Using SDL and standard IO
 #include <SDL2/SDL.h>
 #include <iostream>
 using namespace std;
@@ -13,7 +12,6 @@ int main( int argc, char* args[] ){
 		cerr << "SDL could not initialize! SDL_Error: %s\n" << SDL_GetError();
 	}
 	else{
-		//Create window
 		window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
 		if( window == NULL ){
 			cerr << "Window could not be created! SDL_Error: %s\n" << SDL_GetError();
